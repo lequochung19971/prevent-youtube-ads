@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "skip-youtube-ads",
+  "version": "1.0.0",
+  "description": "Skip youtube ads",
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "permissions": ["activeTab", "tabs"],
+  "content_scripts": [
+    {
+      "matches": ["https://*.youtube.com/*"],
+      "js": ["skip-youtube-ads.js"]
+    }
+  ]
+}
